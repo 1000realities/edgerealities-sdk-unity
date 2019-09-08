@@ -1,6 +1,6 @@
-# Edge Realities android SDK + example
+# Edge Realities Unity SDK + example
 
-This repository contains the android client SDK example for the core Edge Realities platform by [1000 realities](http://1000realities.io) (formerly known as CloudSLAM). Edge Realities is a framework for creating 6DoF tracking and augmented reality experiences using a remote server. 
+This repository contains the Unity 3D client SDK example for the core Edge Realities platform by [1000 realities](http://1000realities.io) (formerly known as CloudSLAM). Edge Realities is a framework for creating 6DoF tracking and augmented reality experiences using a remote server. 
 **Please note that while this repository contains the client SDK, an Edge Realities server instance is necessary to operate it. For more information on how to obtain a license for an Edge Realities server instance please contact <info@1000realities.io>.**
 
 ## Demo video
@@ -10,9 +10,9 @@ For more videos please visit the [1000 realities youtube channel](https://www.yo
 
 ## Getting started
 1. Obtain an Edge Realities server license. For more information please contact <info@1000realities.io>
-2. Download & install [Android Studio](https://developer.android.com/studio/).
+2. Download & install [Unity](https://unity.com/).
 3. Clone the repository.
-4. Open the project (i.e. the repository's root folder) in Android Studio.
+4. Open the project (i.e. the repository's root folder) in Unity.
 5. Build the example app and run it on your device of choice. (See below for a list of currently supported devices).
 
 ## Using the example app
@@ -26,20 +26,16 @@ For more videos please visit the [1000 realities youtube channel](https://www.yo
 
 ### 2. Connect the client app
 1. Run the example app on your device. If the application is ran for the first time it is important that you **accept all permission requests**.
-2. Click the cog icon in the top right corner (or double swipe forward on some smartglass models). You should see a popup menu with two options:
-   - Scan QR code
-   - Connection settings.
-3. Select "Scan QR code", and point the device to the configuration QR code show on the home page of the Edge Realities admin panel (in your web browser).
-4. The application should show a blue popup “Configuration complete” once it was successfully configured for usage with Edge Realities.
-5. Click the “Play” icon in the bottom right corner (or double swipe backwards on some smartglass models) to connect/disconnect to the Edge Realities server intsance.
-6. The red cross icon in the top left corner should now change to a yellow excalmation mark, indicating that the connection has been succesfully established.
+2. Swipe the screen left to show the QR code scanner view, and point the device to the configuration QR code show on the home page of the Edge Realities admin panel (in your web browser).
+3. The application should return to the main screen once it was successfully configured for usage with Edge Realities.
+4. Swipe right to connect/disconnect to the Edge Realities server intsance.
 
 ### 3. Initialize and build an environment map
 1. Once connected, the "video" section (or "Map" section) of the Edge Realities administration panel should show a live preview from the camera on the device.
-2. In not environment data is present, Red lines will be displayed over the preview indicating that the system is trying to initialize environment tracking.
+2. In no environment data is present, red lines will be displayed over the preview indicating that the system is trying to initialize environment tracking.
 ![env init](https://raw.githubusercontent.com/1000realities/edgerealities-sdk-android/master/doc/images/env-initialize.png)
 3. To initialize the environment data, move your device around the environment while looking at the video preview. Try to avoid rapid movement, and make sure that the device is changing it's position (i.e. not just rotating).
-4. After few seconds the yellow exclamation mark icon in the client app should change to a green tick mark, indicating that  the envionrment data has been initialized tracking is in progress. On the video preview you will see that the red lines have been replaced by green dots.
+4. After a few seconds, on the video preview you will see that the red lines have been replaced by green dots. This means that the envionrment data has been initialized tracking is in progress
 ![env tracking](https://raw.githubusercontent.com/1000realities/edgerealities-sdk-android/master/doc/images/env-tracking.png)
 5. Note: The initialization process can take anywhere from a few seconds to 15 minutes (depending on the environment, more clutter = faster initialization), so please be patient.
 6. Move your device around the environment to map it. Try to capture different viewing angles to obtain well defined environment data. You can see the data being built up live in the "Map" section.
@@ -58,7 +54,7 @@ For more videos please visit the [1000 realities youtube channel](https://www.yo
 
 ## SDK Documentation
 
-The full Edge Realities Android SDK Javadoc can be found at <http://1000realities.io/docs/cloudslam/sdk/android/index.html>.
+The full Edge Realities SDK doc can be found at <http://1000realities.io/docs/cloudslam/sdk/unity/index.html>.
 
 ## Device support
 ### Currently supported devices
