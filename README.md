@@ -10,7 +10,7 @@ For more videos please visit the [1000 realities youtube channel](https://www.yo
 
 ## Getting started
 1. Obtain an Edge Realities server license. For more information please contact <info@1000realities.io>
-2. Download & install [Unity](https://unity.com/).
+2. Download & install [Unity](https://unity.com/) 2018.3 or higher.
 3. Clone the repository.
 4. Open the project (i.e. the repository's root folder) in Unity.
 5. Build the example app and run it on your device of choice. (See below for a list of currently supported devices).
