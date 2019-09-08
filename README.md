@@ -43,7 +43,7 @@ For more videos please visit the [1000 realities youtube channel](https://www.yo
 8. In case you don't want to map the environment further and wish to focus only on tracking your device, building the environment map can be disabled in the "Map" section.
 
 ## SDK core concepts / TL;DR
-1. The CloudSLAMCamera script represents the core of the SDK. Attaching it to your main camera should be your starting point.
+1. The CloudSLAMCamera component represents the core of the SDK. Attaching it to your main camera should be your starting point.
 2. The CloudSLAMCamera.StartCloudSLAM() method is used to connect the the EdgeRealities server instance and commence environment tracking/mapping.
 3. The CloudSLAMConfig property of the CloudSLAMCamera component may be filled in manually, however the example app provides a means of automatic configuration through scanning a QR code.
 4. Use the events provided in the CloudSLAMCamera component to fetch relevant events from the SDK.
